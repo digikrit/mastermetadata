@@ -1,7 +1,7 @@
 # Site settings
 title: Master Meta Data
 description: "Organize & manage master meta data centrally"
-baseurl: "/mastermetadata" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
 logo_url: images/logo.png
 

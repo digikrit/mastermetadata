@@ -1,1 +1,133 @@
-Testing project site
+---
+layout: default
+---
+<!-- ******PROMO****** -->
+<section id="promo" class="promo section offset-header">
+    <div class="container text-center">
+        <span class="highlight">
+            {% include {{ site.baseurl }}favicon.svg %}
+            <h4 class="title">MasterMetaData</h4>
+        </span>
+        <p class="intro">Organize & manage master meta data centrally, built upon kong, cassandra, neo4j & elasticsearch.</p>
+        <div class="btns">
+            <a class="btn btn-cta-secondary" href="http://demo.mastermetadata.com" target="_blank">Demo</a>
+            <a class="btn btn-cta-primary" href="http://github.com/digikrit/mastermetadata" target="_blank">Download</a>
+        </div>
+        <ul class="meta list-inline">
+            <li><a href="http://github.com/digikrit/mastermetadata" target="_blank">View on GitHub</a></li>
+            <li><a href="http://github.com/digikrit/mastermetadata" target="_blank">Full Documentation</a></li>
+            <li>Created by: <a href="http://digikrit.github.io/" target="_blank">Digikrit</a></li>
+        </ul><!--//meta-->
+    </div><!--//container-->
+    <div class="social-media">
+        <div class="social-media-inner container text-center">
+            <ul class="list-inline">
+
+            </ul>
+        </div>
+    </div>
+</section><!--//promo-->
+
+<!-- ******ABOUT****** -->
+<section id="about" class="about section">
+    <div class="container">
+        <h2 class="title text-center">What is MasterMetaData?</h2>
+        <h4 class="intro text-center">Organize & manage master meta data centrally, currently storage is based on cassandra, neo4j & elasticsearch while access built on top of kong api gateway (uses openresty/nginx).</h4>
+        <div class="row">
+            {% for project in site.data.projects %}
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa {{ project.icon }}"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            {% endfor %}
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//about-->
+
+
+<!-- ******FEATURES****** -->
+<section id="features" class="features section">
+    <div class="container">
+        <div class="features-inner">
+            <h2 class="title text-center">Features</h2>
+            <h4 class="intro text-center">Various features targeted for initial version and to be released soon, initially the important onces are geoip and user agent based master & meta data. First version aims to provide an example for different use cases like storing, accessing & search master meta data.</h4>
+            <div class="row">
+                <ul class="features-list">
+                    {% for feature in site.data.features %}
+                    <li class="col-sm-6 col-md-4">
+                        <div class="icon-box">
+                            <div class="features-list-item">
+                                <h3 class="sub-title">
+                                    <i class="icon fa {{ feature.icon }}"></i>
+                                    <span>{{ feature.title }}</span>
+                                </h3>
+                                <p>{{ feature.description }}</p>
+                            </div>
+                        </div><!--//content-->
+                    </li><!--//item-->
+                    {% endfor %}
+                </ul><!--//row-->
+            </div>
+            <div style='clear:both'></div>
+        </div><!--//license-inner-->
+    </div><!--//container-->
+</section><!--//features-->
+
+<!-- ******Examples****** -->
+<section id="examples" class="examples section">
+    <div class="container">
+        <div class="examples-inner">
+            <h2 class="title text-center">Examples - Getting Started</h2>
+        </div><!--//examples-inner-->
+    </div><!--//container-->
+</section>
+
+<!-- ******DOCS****** -->
+<section id="documentation" class="documentation section">
+    <div class="container">
+        <div class="docs-inner">
+            <h2 class="title text-center">Documentation</h2>
+        </div><!--//docs-inner-->
+    </div><!--//container-->
+</section><!--//docs->
+
+<!-- Start Hero -->
+<section class="hero section" style="background: url('{{ site.baseurl }}/images/{{ site.hero.hero_img }}') no-repeat;">
+    <div class="hero-content">
+        <div class="container-fluid">
+            <div class="hero-content-inner">
+                <h1>{{ site.hero.hero_title }}</h1>
+                <h4>{{ site.hero.hero_description }}</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
+            <h3 style="margin-top:0px"><span style="margin-right: 20px" class="fa fa-envelope-o"></span>Contact Us</h3>
+            <form action="//digikrit.us11.list-manage.com/subscribe/post?u=4e546efba54898c8276db03e3&amp;id=3ebdb04dc1" method="post">
+                <div class="form-field">
+                    <input name="NAME" type="text" placeholder="Name" required>
+                </div>
+                <div class="form-field">
+                    <input name="PHONE" type="tel" placeholder="Phone" required>
+                </div>
+                <div class="form-field">
+                    <input name="EMAIL" type="email" placeholder="Email" required>
+                </div>
+                <div class="form-field">
+                    <textarea name="MESSAGE" placeholder="Message" required></textarea>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4e546efba54898c8276db03e3_3ebdb04dc1" tabindex="-1" value=""></div>
+                <input type="submit" class="btn btn-cta-primary" value="Send">
+            </form>
+        </div>
+
+    </div>
+</section>
+<!-- End Hero -->

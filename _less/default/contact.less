@@ -1,0 +1,67 @@
+@import "mixins.less";
+@import "theme-default.less";
+/* HERO
+-------------------------------------------------*/
+.hero {
+  position: relative;
+  padding: 20px;
+  .container-fluid {
+    position: relative;
+  }
+  .icon {
+    margin-right: 10px;
+    color: @color;
+    vertical-align: top;
+  }
+}
+
+.hero-content {
+  padding: @space 0;
+  background: rgba(255,255,255,0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .hero-content-inner {
+    width: 50%;
+  }
+  h1 {
+    margin: 0 0 5px;
+    color: @color;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+/* FORM
+-------------------------------------------------*/
+.form {
+  padding: @space @space;
+  background: @colorBg;
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: solid 2px @colorBorder;
+    border-radius: 0;
+    box-shadow: none;
+    &:focus {
+      outline: 0;
+      border-color: @color;
+      transition: all 0.3s ease;
+      box-shadow: none;
+    }
+  }
+  textarea {
+    height: 100px;
+  }
+  .btn {
+    width: auto;
+    border: 0;
+  }
+  .form-field {
+    margin-bottom: 10px;
+  }
+}

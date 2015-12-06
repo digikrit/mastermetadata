@@ -1,0 +1,44 @@
+# Site settings
+title: Master Meta Data
+description: "Organize & manage master meta data centrally"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: images/logo.png
+
+# Hero
+hero: 
+    hero_img: hero.png
+    hero_title: Digikrit Open Source
+    hero_description: Building upon open source & collaborating with the community
+
+# Contact form
+api_token: # Enter API token here
+
+# Social settings
+facebook: http://facebook.com/digikrit
+twitter: http://twitter.com/digikrit
+pinterest: http://pinterest.com/digikrit
+github: http://github.com/digikrit
+youtube: http://youtube.com/digikriti
+feed: yes
+
+# Footer
+copyright: © <script>document.write((new Date()).getFullYear())</script> <a style="color:white" href="http://digikrit.com">Digikrit</a> - All rights reserved | Built with jekyll theme - <a style="color:white" href="https://github.com/kevit/devaid-jekyll-theme">DevAid</a>
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+    package.json,
+    bower.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics: UA-67822772-2
+google_verification: MnpJF9kA9ZT2zQaDIrhCtk3NHXaXEc5fJJmjoC-xaqU

@@ -1,0 +1,137 @@
+/* ======= Header ======= */
+.header {
+  padding: 10px 0;
+  background: @color;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+  &.navbar-fixed-top {
+    background: #fff;
+    z-index: 9999;
+    .box-shadow (0 0 4px rgba(0,0,0,0.4));
+    .logo {
+      a {
+        color: @color;
+      }
+    }
+    .main-nav .nav .nav-item a {
+      color: @text-secondary;
+    }
+  }
+
+  .logo {
+    margin: 0;
+    filter: drop-shadow();
+    font-size: 26px;
+    padding-top: 0px;
+    a {
+      color:#fff;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .main-nav {
+    button {
+      background: darken(@color, 30%);
+      color: #fff !important;
+      .border-radius(4px);
+      &:focus {
+        outline: none;
+      }
+      .icon-bar {
+        background-color: #fff;
+      }
+    }
+    .navbar-collapse {
+      padding: 0;
+    }
+    .nav {
+      .nav-item {
+        font-weight: normal;
+        margin-right: 30px;
+        font-family: 'Montserrat', sans-serif;
+        &.active {
+          a{
+            color: #fff;
+          }
+        }
+        a {
+          color: darken(@color, 20%);
+          .transition (none);
+          font-size: 16px;
+          padding: 25px 10px;
+          &:hover {
+            color: darken(@color, 30%);
+            background: none;
+          }
+          &:focus {
+            outline: none;
+            background: none;
+          }
+          &:active {
+            outline: none;
+            background: none;
+          }
+        }
+        &.active {
+          color: #fff;
+          background: @color-2;
+        }
+        &.last {
+          margin-right: 0;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.rotateText{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position:absolute;
+  top:0px;
+  right:0px;
+  margin: 15px 0px 0px 0px;
+  color: white;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  :hover{
+    color: white;
+  }
+}
+#forkongithub:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-bottom: 70px solid transparent;
+  border-left: 70px solid transparent;
+  border-right: 70px solid @color-2;
+  pointer-events: none;
+}
+.navbar-fixed-top #forkongithubtext:before{
+  border-top: 30px solid white;
+}
+#forkongithubtext:before {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-top: 30px solid @color;
+  pointer-events: none;
+}

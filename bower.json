@@ -1,0 +1,37 @@
+{
+  "name": "Digikrit-Github",
+  "version": "1.0.0",
+  "authors": [
+    "Akhil Agrawal <akhil.agrawal@digikrit.com>"
+  ],
+  "description": "Digikrit Opensource Projects on Github",
+  "main": "index.html",
+  "keywords": [
+    "digikrit",
+    ""
+  ],
+  "license": "Apache License Version 2.0",
+  "homepage": "http://digikrit.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "font-awesome": "latest",
+    "jquery.easing": "~1.3",
+    "jquery.scrollTo": "~2.1.2",
+    "prism": "latest",
+    "jquery-migrate": "~1.2.1",
+    "detect-mobile-browser": "latest",
+    "owl-carousel": "~1.3.2",
+    "magnific-popup": "~1.0.0"
+  },
+  "devDependencies": {
+    "lesshat": "~3.0.2"
+  }
+}

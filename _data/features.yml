@@ -1,0 +1,23 @@
+- icon: fa-sign-in
+  title: Access using Kong
+  description: Flexible, scalable access to master & meta data is provided using kong api gateway to backend applications. Plugins for accessing master & meta data are written in lua.
+
+- icon: fa-database
+  title: Storage in Cassandra
+  description: Storing master data in cassandra provides scalability in accessing it at different geographical locations. Its also used with kong for api management and other related storage.
+
+- icon: fa-search
+  title: Search with Elasticsearch
+  description: Lot of master & meta data management use cases involves searching data. Using elasticsearch to provide search api to the master data and meta data stored.
+
+- icon: fa-sitemap
+  title: Storage in Neo4j
+  description: Storage in Neo4j graph database provides flexibility to evolve the data model & relationships when new data sources are added in the system without impacting the services
+
+- icon: fa-globe
+  title: GeoIP using MaxMind
+  description: Using MaxMind GeoIP data for converting ip to country, state, city, organization & operator. Ability to improve/update the geoip accuracy & add additional sources as well.
+
+- icon: fa-desktop
+  title: Apache DeviceMap
+  description: Using Apache DeviceMap to parse user agent into device, browser & os based on various patterns. Also provide values for different device, browser, os attributes.

@@ -1,0 +1,59 @@
+/* ======= Promo Section ======= */
+.promo {
+  background: @color;
+  color: #fff;
+  padding-top: 150px;
+  .highlight {
+    .title {
+      font-size: 40px;
+      color: #fff;
+      margin-top: 0;
+    }
+  }
+
+  .intro {
+    font-size: 28px;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .btns {
+    .btn {
+      margin-right: 15px;
+      font-size: 18px;
+      padding: 8px 30px;
+    }
+  }
+
+  .meta {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    color: darken(@color, 20%);
+    li {
+      margin-right: 15px;
+
+    }
+    a {
+      color: darken(@color,20%);
+      &:hover {
+        color: darken(@color, 30%);
+      }
+    }
+  }
+
+  .social-media {
+    background: darken(@color, 15%);
+    padding: 10px 0;
+    margin: 0 auto;
+    li {
+      margin-top: 15px;
+      &.facebook-like {
+        margin-top: 0;
+        position: relative;
+        top: -5px;
+      }
+    }
+  }
+
+}

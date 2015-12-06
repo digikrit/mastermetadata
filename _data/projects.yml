@@ -1,0 +1,14 @@
+- icon: fa-location-arrow
+  title: ip-transformer
+  description: Kong plugin to transform ip to country, state, city, organization using various data sources
+  url: https://digikrit.github.io/digikrit/ip-transformer
+
+- icon: fa-mobile
+  title: useragent-transformer
+  description: Kong plugin to transform user agent to device, browser & os using patterns & attributes data
+  url: https://digikrit.github.io/digikrit/useragent-transformer
+
+- icon: fa-database
+  title: master-transformer
+  description: Kong plugin to transform master data using cassandra, neo4j for storage & elasticsearch
+  url: https://digikrit.github.io/digikrit/master-transformer

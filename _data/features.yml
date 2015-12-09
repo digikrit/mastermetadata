@@ -4,7 +4,7 @@
 
 - icon: fa-database
   title: Storage in Cassandra
-  description: Storing master data in cassandra provides scalability in accessing it at different geographical locations. Its also used with kong for api management and other related storage.
+  description: Storing master data in cassandra provides scalability in accessing it at different geographical locations. Also used by kong for api management & other related storage.
 
 - icon: fa-search
   title: Search with Elasticsearch
